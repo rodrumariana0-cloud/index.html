@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para laurinha ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffb6c1;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 100px;
+    color: white;
+    font-size: 50px;
+}
+
+p {
+    color: white;
+    font-size: 22px;
+    max-width: 700px;
+    margin: auto;
+}
+
+img {
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.heart {
+    position: fixed;
+    color: red;
+    font-size: 25px;
+    animation: subir 5s linear infinite;
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>❤️ laurinha ❤️</h1>
+
+<p>
+você é a mulher dos meus sonhos, aquela que eu sempre pedi a Deus. 
+voce é incrivel e tudo em voce me encanta,
+me sinto sortuda por te ter ao meu lado, voce é a minha preciosidade, 
+obrigada por trazer luz na minha vida, obrigada por todo o cuidado de sempre,
+p sempre nós. eu te amo nene, voce merece o mundo!❤️
+</p>
+
+<img src="./foto.jpeg" alt="Nossa foto">
+
+<script>
+for(let i = 0; i < 30; i++){
+    let heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
